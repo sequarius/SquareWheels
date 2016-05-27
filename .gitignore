@@ -6,3 +6,9 @@
 .DS_Store
 /build
 /captures
+
+/gradle.properties
+/sample/src/androidTest/
+/sample/src/test/
+/library/src/androidTest/
+/library/src/test/
