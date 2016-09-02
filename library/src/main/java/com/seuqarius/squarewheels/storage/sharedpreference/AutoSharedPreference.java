@@ -1,6 +1,7 @@
 package com.seuqarius.squarewheels.storage.sharedpreference;
 
 import android.content.Context;
+import android.util.Log;
 
 
 import com.google.dexmaker.stock.ProxyBuilder;
@@ -42,7 +43,6 @@ public class AutoSharedPreference implements InvocationHandler {
         for(Field fe : objectValueMap.keySet())
             keyWithValueMap.put(fe.getFieldName(), objectValueMap.get(fe));
         ReflectUtil.setFiledAndValue(keyWithValueMap, object, modelClazz);
-
         proxy.startProxy();
         return object;
     }
